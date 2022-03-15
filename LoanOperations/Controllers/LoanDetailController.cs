@@ -43,6 +43,7 @@ namespace LoanOperations.Controllers
             {
                 return Content(HttpStatusCode.NotFound,"Id Not Found");
             }
+
             return Ok(_mappingService.Map<RequestLoanModel>(loanDetail));
         }
 
